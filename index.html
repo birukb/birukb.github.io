@@ -3,15 +3,39 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Biruk Desta</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/site.css" type="text/css">
 </head>
-<body>
+<body ng-app="birukApp">
 
-<div>
-  <h1>Biruk Desta</h1>
-  <p>This is to be my github page!</p>
+<div class="container">
+  <header class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <div class="navbar-brand"><a href="#/">Biruk Desta</a></div>
+    </div>
+
+    <div class="navbar-collapse collapse pull-right">
+      <div class="menu" id="mainMenu">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div ng-view></div>
+
+  <footer>
+    &copy; 2014 Biruk Desta
+  </footer>
 </div>
-<script type="text/javascript" src="js/index.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+<script src="js/app.js"></script>
 </body>
 
 </html>
